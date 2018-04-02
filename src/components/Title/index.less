@@ -1,0 +1,40 @@
+
+.title {
+  margin: 0;
+  display: inline-block;
+  padding: 2px; 
+  transition: all .2s;
+  cursor: pointer;
+
+  &:after {
+    content: "";
+    width: 0;
+    height: 2px;
+    display: block;
+    background: #787878;
+  }
+
+  &:hover {
+    &:after {
+      width: 100%;
+      margin-left: 0;
+      animation: showBorder .2s;      
+    }
+  }
+
+  @keyframes showBorder {
+    from {
+      margin-left: 50%;
+      width: 0;
+    } to {
+      margin-left: 0;      
+      width: 100%;
+    }
+  }
+}
+
+.noAnimate {
+  &:after {
+    display: none;
+  }
+}

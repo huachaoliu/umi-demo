@@ -1,0 +1,80 @@
+html {
+  overflow: hidden;
+}
+
+.normal {
+  color: red;
+  margin: 20px 0;
+}
+
+.main {
+  flex: auto;
+  background: #fff;
+  overflow-x: hidden;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.siderBar {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+
+  img {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+
+  .type {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+
+  .tag {
+    display: flex;
+    margin: 0 5px;
+
+    span {
+      margin-bottom: 5px;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  .tagContent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .qrcode {
+    margin-top: 20px;
+
+    img {
+      border-radius: 0;
+      width: 180px;
+      height: 180px;
+      transition: all .2s;      
+    }
+  }
+
+  .github {
+    a {
+      color: #fff;
+      
+      i {
+        margin-right: 5px;
+      }
+    }
+  }
+}
