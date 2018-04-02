@@ -1,2 +1,2 @@
-# umi-demo
-umi.js的demo
+# use umi.js to build project
+> umi.js
